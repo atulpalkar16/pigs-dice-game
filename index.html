@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./modal/modal.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <main class="container">
+            <!-- player 1 -->
+            <section class="player player-0 active-player">
+                <h1 class="name name-0">player 1</h1>
+                <h2 class="score" id="score-0">0</h2>
+
+                <div class="current">
+                    <p class="current-label">current</p>
+                    <p class="current-score" id="current-score-0">0</p>
+                </div>
+            </section>
+               
+            
+            <!-- players 2 -->
+            <section class="player player-1">
+                <h1 class="name name-1">player 2</h1>
+                <h2 class="score" id="score-1">0</h2>
+
+                <div class="current">
+                    <p class="current-label">current</p>
+                    <p class="current-score" id="current-score-1">0</p>
+                </div>
+            </section>
+
+            <!-- middle section-->
+            <section class="middle">
+                <img src="dice-5.png" alt="five" class="dice">
+                <button class="btn btn-newGame"> 🔁 New game</button>
+                <button class="btn btn-roll">🎲 Roll dice </button>
+                <button class="btn btn-hold">🔽 Hold score </button>
+            </section>
+
+        </main><!--container ends here-->
+
+        <!-- modal for instructinos -->
+        <div class="modal-button">
+            <button class="btn instructions-btn">Instructions</button>
+        </div>
+        <div class="modal">
+            <div class="close">&times;</div>
+            
+            <div>
+                <ul> <strong> Objective: </strong> 
+                    <li>Be the first player to reach or exceed the specified 100 points.</li>
+                </ul> <br>
+                <ul>  <strong> Gameplay: </strong>
+                    <li>Players take turns rolling a six-sided die by clicking the "Roll Dice" button.</li>
+                    <li>The number rolled is added to the current score.</li>
+                    <li>If a player rolls a 1, their turn ends, and the current score is reset to 0.</li>
+                    <li>Players can choose to "Hold Score," adding the current score to their total score.</li>
+                    <li>The turn is then switched to the other player.</li>
+                </ul> <br>
+                <ul>  <strong> Winning: </strong>
+                    <li>The game ends when a player's total score reaches or exceeds the specified maximum points.</li>
+                    <li>The winning player is highlighted, and the game is locked from further actions.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    
+    </div> <!-- wrapper ends here -->
+
+
+    <!-- scipt js -->
+    <script src="./modal/modal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ Welcome to the Pig's Dice Game! This simple web-based game allows two players to
 The Pig's Dice Game is a turn-based game where players roll a six-sided dice to accumulate points. Players can choose to roll the dice and add the result to their current score or hold their current score and switch to the other player. The game continues until one player reaches or exceeds a specified maximum score.
 
 ### Links
-Live Deployed Site: 
+Live Deployed Site: https://atulpalkar16.github.io/pigs-dice-game/
 
 ## Instructions
 
